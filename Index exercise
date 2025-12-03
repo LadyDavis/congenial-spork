@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> My Website </title>
+	<link rel="stylesheet" href="stylingindex2.css">
+				<link 
+				rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	
+</head>	
+<body>
+	<header> <h1> Welcome to my website. </h1> 
+	<nav class="main-nav">
+			<ul>
+		<li><a href="#About.html"> About Us</a></li>
+		<li><a href="#Services.html"> Services</a></li>
+		<li><a href="#Contact.html"> Contact Us</a></li>
+		</ul>
+	</nav>
+	</header>
+
+<main class="main-content">
+	<section class="about-section">
+		<h2> About Us </h2>
+		<p> This is a paragraph about our company. </p>
+	</section>
+	
+<aside class="contact-section">
+	<h2>Contact</h2>
+		<address> Email: example@email.com </address>
+	</aside>
+</main>
+	
+<footer>
+	<p>	&copy; All rights reserved. </p>
+	
+	<nav>
+		<ul class="footer-nav">
+		<li><a href="#About.html"> About Us</a></li>
+		<li><a href="#Services.html"> Services</a></li>
+		<li><a href="#Contact.html"> Contact Us</a></li>
+		</ul>
+	</nav>
+	
+	<p>
+	<a href="#"><i class="fab fa-facebook"></i></a>
+	<a href="#"><i class="fab fa-instagram"></i></a>
+	<a href="#"><i class="fab fa-twitter"></i></a>
+	</p>
+</footer>
+</body>
+</html>
