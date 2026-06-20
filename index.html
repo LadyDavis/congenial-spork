@@ -1,59 +1,294 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<met name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> My Profile Page </title>
-	<style>
-		/* Making the body look nice */
-		body {
-			font family: Arial, sans-serif;
-			max width: 800px;
-			margin: 0 auto;
-			padding:20px;
-			background-color: #f0f0f0;
-			}
-			/* Styling the headings */
-		h1 {
-			color: #2c3e50;
-			text-align: center;
-			}
-		/* Making the image responsive */
-		img {
-			Max-width: 100%;
-			height:auto;
-			display:block;
-			margin: 20px auto;
-			border-radius: 8px;
-			}
-		/* Styling the links */
-		a {
-			Color: #3498db;
-			text-decoration:none;
-			}
-		a:hover {
-	text-decoration:underline;
-	}
-			/* Styling paragraphs */
-			p {
-			line-height: 1.6;
-			color: #333;
-			}
-	
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-	<body>
-		<h1> Welcome to My Profile Page </h1>
-			<!-- Adding an image-->
-		<img src="https://thumbs.wbm.im/pw/medium/5b5d02afa8ae318b1ab7d8ebd89bc29e.jpg" alt="profile picture">
-			<h2> About Me </h2>
-			
-		<p> Hello! I'm Sophie and i am learning web development. This is my first webpage where i am practicing both Html and CSS. </p>
+<body class="font-[Inter] max-w-[1200px] mx-auto">
+  <!-- This is the navigation bar-->
 
-<h2> My Favourite Websites </h2>
-<ul>
-	<li><a href="https://github.com" target="_blank">Github</a></li>
-	<li><a href="http://wikipedia.org" target="_blank">Wikipedia</a></Li>
-</ul>
-	</body>
+  <nav class="flex flex-col md:flex-row justify-between items-center gap-4 px-6 py-4 border-b">
+    <h1 class="font-bold">STUDENT_PORTFOLIO_V1</h1>
+
+    <div class="flex flex-wrap justify-center items-center gap-6 md:gap-16">
+      <a href="index.html">HOME</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="contacts.html" class="underline">CONTACT</a>
+
+      <button class="bg-black text-white px-4 py-2 text-xs">
+        Download_CV
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- Top Section-->
+  <section class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+    <!-- LEFT -->
+    <div>
+      <p class="text-xs mb-6 text-gray-500">
+        SELECTED WORKS 2023—24
+      </p>
+
+      <h1 class="leading-[0.9]">
+        <span class="block text-4xl md:text-6xl lg:text-[90px] font-extrabold">ARCHITECTURAL<br>
+          <span class="block text-4xl md:text-6xl lg:text-[90px] font-extrabold">INTEGRITY &<br>
+            <span class="block text-4xl md:text-6xl lg:text-[90px] font-extrabold">SPATIAL LOGIC.
+      </h1>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="flex flex-col justify-center gap-6">
+      <p class="text-sm text-gray-600">
+        A focused investigation into modular structures and technical precision within high-density urban environments.
+        Designed for clarity, authority, and high-performance utility.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4">
+        <button class="bg-lime-100 text-indigo-600 px-6 py-4 text-xs hover:bg-amber-200">
+          EXPLORE PORTFOLIO
+        </button>
+        <button class="bg-green-100 text-indigo-600 px-6 py-4 text-xs hover:bg-amber-200">
+          OUR PHILOSOPHY
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!--middle section-->
+  <section class="grid grid-cols-2 md:grid-cols-4 text-center border bg-sky-100">
+
+    <div class="py-8">
+      <p class="text-xs">PROJECTS COMPLETED</p>
+      <p class="text-2xl font-bold">42+</p>
+    </div>
+
+    <div class="py-8">
+      <p class="text-xs">GLOBAL AWARDS</p>
+      <p class="text-2xl font-bold">12</p>
+    </div>
+
+    <div class="py-8">
+      <p class="text-xs">TECHNICAL CERTS</p>
+      <p class="text-2xl font-bold">08</p>
+    </div>
+
+    <div class="py-8">
+      <p class="text-xs">DESIGN LABS</p>
+      <p class="text-2xl font-bold">03</p>
+    </div>
+
+  </section>
+
+  <!--last section-->
+  <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
+
+    <!-- LEFT IMAGE CARD -->
+    <div class="relative">
+      <img src="Images/pavilion.jpg" class="w-full h-64 md:h-80 lg:h-96 object-cover">
+
+      <div class="absolute bottom-4 left-4 text-white">
+        <p class="text-xs">PROJECT 001</p>
+        <h3 class="text-xl font-bold">THE MONOLITH PAVILION</h3>
+        <p class="text-sm text-white">
+          Exploration of concrete as a fluid yet structural element in public transit hubs.<br><br>
+
+          <a href="#" class="hover:underline bg-green-100 text-indigo-600 px-6 py-4 text-xs hover:bg-amber-200">
+          VIEW CASE STUDY <span class="animate-bounce">→</span></a>
+
+        </p>
+
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="grid gap-4">
+
+      <!-- TOP CARD -->
+      <div class="border p-8">
+        <p class="text-xs">METHODOLOGY</p>
+        <h3 class="font-bold">
+          BIM INTEGRATION & STRUCTURAL ANALYTICS
+        </h3>
+        <p class="text-sm border-b">
+          Every project follows a rigid grid system of 8px increments ensuring mathematical perfection from initial
+          concept to the final blueprint.
+        </p>
+        <br<br><br>
+
+          <div class="flex gap-4 text-sm uppercase tracking-widest">
+
+            <div class="flex-1 text-center">
+              CAD
+              <div class="border-b border-4 border-black mt-2"></div>
+            </div>
+
+            <div class="flex-1 text-center">
+              3D MAPPING
+              <div class="border-b border-4 border-black mt-2"></div>
+            </div>
+
+            <div class="flex-1 text-center">
+              SUSTAINABILITY
+              <div class="border-b border-4 border-gray-500 mt-2"></div>
+            </div>
+
+          </div>
+      </div>
+
+      <!-- BOTTOM GRID -->
+     <div class="grid grid-cols-2 gap-4">
+
+  <div class="border p-8">
+    <div class="flex justify-between items-start gap-4">
+      <div>
+        <p class="text-xs">LAB ARCHIVE</p>
+        <h4 class="font-bold">SHADOW STUDIES</h4>
+      </div>
+
+      <img
+        src="Images/shadow.jpeg"
+        class="w-24 h-24 object-cover flex-shrink-0">
+    </div>
+  
+  </div>
+
+       <div class="bg-black text-white p-8 flex flex-col justify-between">
+          <p class="text-sm">JOIN THE ARCHITECTURAL DIALOGUE.</p>
+          <button class="bg-teal-100 text-indigo-600 px-6 py-4 text-xs hover:bg-amber-200">
+            SUBMIT INQUIRY
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Index Section-->
+  <section class="px-8 py-12">
+
+    <div class="flex justify-between items-end border-b pb-4">
+
+      <div>
+        <p class="text-xs tracking-widest text-gray-500">INDEX</p>
+        <h2 class="text-4xl font-black">CURRENT PROJECTS</h2>
+      </div>
+
+      <div class="text-right text-xs">
+        <p class="text-gray-500">SORT BY</p>
+        <p class="border-b inline-block">YEAR: 2024</p>
+      </div>
+
+    </div>
+
+    <div class="divide-y">
+
+      <!-- Row 1 -->
+      <div class="overflow-x-auto">
+      	<div class="divide-y min-w-[700px]">
+
+        <div class="col-span-1 text-sm text-gray-500">001</div>
+
+        <div class="col-span-5 font-semibold">
+          VORTEX HOUSING COMPLEX
+        </div>
+
+        <div class="col-span-3 text-sm text-gray-500">
+          STOCKHOLM, SE
+        </div>
+
+        <div class="col-span-3 flex gap-2 justify-end">
+          <span class="text-xs border px-2 py-1 bg-lime-100">URBAN</span>
+          <span class="text-xs border px-2 py-1 bg-green-100">RESIDENTIAL</span>
+        </div>
+
+      </div>
+
+      <!-- Row 2 -->
+      <div class="grid grid-cols-12 py-6 items-center">
+
+        <div class="col-span-1 text-sm text-gray-500">002</div>
+
+        <div class="col-span-5 font-semibold">
+          THE LINEAR OBSERVATORY
+        </div>
+
+        <div class="col-span-3 text-sm text-gray-500">
+          ATACAMA, CL
+        </div>
+
+        <div class="col-span-3 flex gap-2 justify-end">
+          <span class="text-xs border px-2 py-1 bg-lime-100">SCIENCE</span>
+          <span class="text-xs border px-2 py-1 bg-green-100">MINIMALIST</span>
+        </div>
+
+      </div>
+
+      <!-- Row 3 -->
+      <div class="grid grid-cols-12 py-6 items-center">
+
+        <div class="col-span-1 text-sm text-gray-500">003</div>
+
+        <div class="col-span-5 font-semibold">
+          BRUTALIST ATRIUM
+        </div>
+
+        <div class="col-span-3 text-sm text-gray-500">
+          BERLIN, DE
+        </div>
+
+        <div class="col-span-3 flex gap-8 justify-end">
+          <span class="text-xs border px-2 py-1 bg-lime-100">PUBLIC</span>
+          <span class="text-xs border px-2 py-1 bg-green-100">INTERIOR</span>
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+    <section class="bg-black text-white py-24 text-center">
+
+      <h2 class="text-5xl font-black leading-tight">
+        STAY UPDATED ON THE LATEST<br>
+        STRUCTURAL INVESTIGATIONS.
+      </h2>
+
+      <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+        <input class="w-full max-w-md bg-transparent border-b border-gray-400 px-6 py-4 text-sm w-64 text-center"
+          placeholder="EMAIL ADDRESS" />
+        <span class="ml-6 animate-bounce">→</span>
+      </div>
+
+      <div class="mt-10 flex justify-center gap-8 text-xs tracking-widest">
+        <a href="#">JOURNAL</a>
+        <a href="#">NOTES</a>
+        <a href="#">TWITTER</a>
+      </div>
+
+
+    </section>
+
+
+    <!-- This is the footer section-->
+
+    <!-- This is the footer section-->
+<footer class="px-10 py-12 border-black border-t-4 text-sm bg-sky-100">
+  <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+    
+    <p>&copy; 2024 Architectural_Systems. All rights reserved.</p>
+
+    <div class="flex flex-wrap justify-center gap-6 md:gap-16">
+      <a href="#" class="hover:underline">LINKEDIN</a>
+      <a href="#" class="hover:underline">GITHUB</a>
+      <a href="#" class="hover:underline">READCV</a>
+      <a href="#" class="hover:underline">TWITTER</a>
+    </div>
+
+  </div>
+</footer>
+</body>
 </html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Home">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-[Inter] max-w-[1200px] mx-auto px-4 sm:px-6">
+<!-- This is the navigation bar-->
+
+<nav class="flex flex-col md:flex-row justify-between items-center gap-4 px-6 py-4 border-b">
+ <h1 class="font-bold">STUDENT_PORTFOLIO_V1</h1>
+
+ <div class="flex flex-wrap justify-center items-center gap-6 md:gap-16">
+  <a href="index.html">HOME</a>
+  <a href="projects.html">PROJECTS</a>
+  <a href="contacts.html" class="underline">CONTACT</a>
+
+  <button class="bg-black text-white px-4 py-2 text-xs">
+    DOWNLOAD_CV
+  </button>
+</div>
+</nav>
+
+
+<!-- Top Section-->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 px-4 sm:px-6 lg:px-10 py-12 lg:py-20">
+  
+  <div class="flex gap-6">
+<div class="w-[3px] bg-black mt-2"></div>
+
+  <div>
+    <p class="text-xs mb-6">03 // INQUIRY_NODE</p>
+
+   <h1 class="leading-[0.9]">
+  <span class="block text-5xl sm:text-6xl lg:text-[90px] font-extrabold">
+    LEAVE YOUR
+  </span>
+
+  <span class="block text-5xl sm:text-6xl lg:text-[90px] font-semibold text-gray-500 border-b-4 border-gray-500">
+  MARK.
+</span>
+</h1>
+
+    <p class="text-xs mt-6 max-w-md border-b pb-4">
+    Currently exploring the intersection of tectonic materiality and the digital interfaces. open for architectural visualisations, full-stack collaborations, and technical dialogue.
+    </p>
+  </div>
+</div>
+</section>
+
+<!--main section--> 
+  <section class="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-16 items-start">
+  
+  <!--contact form-->
+ 	<div class="border border-gray-200 p-8">
+  <form class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
+  
+  <!-- Full Name -->
+  <div class="flex flex-col">
+    <label class="text-xs mb-1">FULL NAME</label>
+    <input class="bg-gray-100 p-3 text-sm outline-none" type="text" placeholder="David Smith">
+  </div>
+
+  <!-- Email -->
+  <div class="flex flex-col">
+    <label class="text-xs mb-1">EMAIL ADDRESS</label>
+    <input class="bg-gray-100 p-3 text-sm outline-none" type="email" placeholder="client@domain.com">
+  </div>
+
+  <!-- Subject -->
+  <div class="flex flex-col col-span-2">
+    <label class="text-xs mb-1">SUBJECT</label>
+    <input class="bg-gray-100 p-3 text-sm outline-none" type="text" placeholder="Project collaboration">
+  </div>
+
+  <!-- Message-->
+  <div class="flex flex-col col-span-2">
+    <label class="text-xs mb-1">MESSAGE</label>
+    <textarea class="bg-gray-100 p-3 text-sm h-40 outline-none" placeholder="Describe the scope..."></textarea>
+  </div>
+
+  <!-- Submit -->
+  <div class="col-span-2">
+  <button class="bg-green-100 text-indigo-600 border px-4 py-2 text-xs hover:bg-amber-200 flex items-center gap-2">
+    
+    <span class="animate-bounce">→</span>
+    
+    INITIALIZE CONTACT
+
+  </button>
+</div>
+
+</form>
+</div>
+    <!-- map section-->
+<div class="flex flex-col gap-16">
+
+   <div>
+    <div class="h-[2px] w-10 bg-black mb-2"></div>
+    <p class="text-xs mb-4">GEOGRAPHIC NODE</p>
+
+    <h3 class="font-bold mb-2">METRO_STATION_404</h3>
+
+    <p class="text-xs leading-relaxed mb-6">
+      128 TECH PAVILION, LEVEL 02<br>
+      ZURICH, SWITZERLAND CH-8001
+    </p>
+
+    <div class="w-full h-64 border overflow-hidden flex items-center justify-center text-xs text-gray-400">
+	<iframe
+  class="w-full h-full"
+  src="https://www.google.com/maps?q=Zurich,Switzerland&output=embed"
+  loading="lazy">
+</iframe>
+</div>
+  </div>
+
+  <!-- CONTACT -->
+  <div>
+    <div class="h-[2px] w-10 bg-black mb-2"></div>
+    <p class="text-xs mb-4">DIRECT REACH</p>
+
+    <p class="font-bold break-all">HELLO@STUDIOARCHIVE.IO <span class="inline-block animate-bounce">↗</span></p>
+    <p class="font-bold mt-2">+410000 000 000 <span class="inline-block animate-bounce">↗</span></p>
+  </div>
+
+
+  <!-- SOCIAL -->
+<div class="flex flex-wrap gap-3">
+
+  <button class="bg-lime-100 text-indigo-600 border px-4 py-2 text-xs hover:bg-amber-200">
+    INSTAGRAM <span class="inline-block animate-bounce">↗</span>
+  </button>
+
+  <button class="bg-green-100 text-indigo-600 border px-4 py-2 text-xs hover:bg-amber-200">
+    LINKEDIN <span class="inline-block animate-bounce">↗</span>
+  </button>
+
+  <button class="bg-lime-100 text-indigo-600 border px-4 py-2 text-xs hover:bg-amber-200">
+    GITHUB <span class="inline-block animate-bounce">↗</span>
+  </button>
+
+</div>
+  
+</section>
+  
+<!-- This is the footer section-->
+
+    <!-- This is the footer section-->
+<footer class="px-10 py-12 border-black border-t-4 text-sm bg-sky-100">
+  <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+    
+    <p>&copy; 2024 Architectural_Systems. All rights reserved.</p>
+
+    <div class="flex flex-wrap justify-center gap-6 md:gap-16">
+      <a href="#" class="hover:underline">LINKEDIN</a>
+      <a href="#" class="hover:underline">GITHUB</a>
+      <a href="#" class="hover:underline">READCV</a>
+      <a href="#" class="hover:underline">TWITTER</a>
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>
