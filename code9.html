@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>code9</title>
+	<meta charset="UTF-8">
+	<meta name="generator" content="BBEdit 16.0">
+	<link rel="stylesheet" href="code9.css"/>
+</head>
+<body>
+<header>
+<img src="logo.jpg" alt="logo" class="logo">
+
+<div class="header-content">
+	<ul class="nav-top">
+	<li> <a href="#">Search for Homes</a> </li>
+	<li> <a href="#">Agents & Offices </a></li>
+	<li> <a href="#">Local Information</a> </li>
+	</ul>
+	
+	
+	<div class="nav-bottom">
+	<span class="language">English</span>
+	<a href="#">Buying &amp; Selling Your Home </a>
+	<a href="#">About Us </a>
+	<a href="#">Account </a>
+	</div>
+</div>
+
+</header>
+
+<div class="search">
+
+<form>
+<div class="field">
+<label for="loc">Search</label>
+<input type="text" id="loc" name="loc" placeholder="Walderslade">
+</div>
+
+<div class="field">
+<label for="min">Price £</label>
+<input type="number" id="min" name="min" min="50000" step="1000" placeholder="120000">
+</div>
+
+<div class="field">
+<label for="max">Price £</label>
+<input type="number" id="max" name="max" min="50000" step="1000" placeholder="400000">
+</div>
+
+<div class="field">
+<label for="bed">Beds</label>
+<select id="bed" name="bed" >
+	<option value=""> Please Select </option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+</select>
+</div>
+
+
+<div class="field">
+<label for="bath">Baths</label>
+<select id="bath" name="bath" >
+	<option value=""> Please Select </option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+</select>
+</div>
+
+<button> Update </button>
+<span> Advanced Search </span>
+</form>
+
+</div>
+
+<div class="property-layout">
+	<div class="ads">
+
+<section class="property-card">
+<img src="cot1.jpg" alt= "Spactious cottage for sale">
+<div class="property-text">
+<h3> Spacious Cottage for Sale </h3>
+<p class="price"> £230000</p>
+<p class="description"> This lovely property is nested between the hills of trolls and forests of fairies.
+<button class="read-more"> ...</button></p> 
+<p class=extra> With 4 luxury bedroooms and 3 modern bathrooms this spacious cottage has everything you & your family will need. </p>
+</div>
+</section>
+
+<section class="property-card">
+<img src="cot2.jpg" alt= "Spactious cottage for sale">
+<div class="property-text">
+<h3> Spacious Cottage for Sale </h3>
+<p class="price"> £230000</p>
+<p class="description"> 
+<span> This lovely property is nested between the hills of trolls and forests of fairies.</span>
+<button class="read-more"> ...</button></p> 
+<p class=extra> With 4 luxury bedroooms and 3 modern bathrooms this spacious cottage has everything you & your family will need. </p>
+</div>
+</section>
+
+<section class="property-card">
+<img src="cot3.jpg" alt= "Spactious cottage for sale">
+<div class="property-text">
+<h3> Spacious Cottage for Sale </h3>
+<p class="price"> £230000</p>
+<p class="description"> 
+<span> This lovely property is nested between the hills of trolls and forests of fairies.</span>
+<button class="read-more"> ...</button></p> 
+<p class=extra> With 4 luxury bedroooms and 3 modern bathrooms this spacious cottage has everything you & your family will need. </p>
+</div>
+</section>
+
+<section class="property-card">
+<img src="cot4.jpg" alt= "Spactious cottage for sale">
+<div class="property-text">
+<h3> Spacious Cottage for Sale </h3>
+<p class="price"> £230000</p>
+<p class="description"> 
+<span> This lovely property is nested between the hills of trolls and forests of fairies.</span>
+<button class="read-more"> ...</button></p> 
+<p class=extra> With 4 luxury bedroooms and 3 modern bathrooms this spacious cottage has everything you & your family will need. </p>
+</div>
+</section>
+</section>
+
+<section class="property-card">
+<img src="cot5.jpg" alt= "Spactious cottage for sale">
+<div class="property-text">
+<h3> Spacious Cottage for Sale </h3>
+<p class="price"> £230000</p>
+<p class="description"> 
+<span> This lovely property is nested between the hills of trolls and forests of fairies.</span>
+<button class="read-more"> ...</button></p> 
+<p class=extra> With 4 luxury bedroooms and 3 modern bathrooms this spacious cottage has everything you & your family will need. </p>
+</div>
+</section>
+
+</div>
+
+<div class="iframe-container">
+    <iframe
+    src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39883.919460410645!2d0.4822733856908297!3d51.334210549830495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df32bf0c4be1ed%3A0x7b00fe9f1d7f0d0c!2sWalderslade%2C%20Chatham!5e0!3m2!1sen!2suk!4v1784284053622!5m2!1sen!2suk"
+    width="600"
+    height="450"
+    style="border:0;"
+    loading="lazy">
+</iframe>
+</div>
+
+</div>
+<script>
+const buttons = document.querySelectorAll(".read-more");
+
+buttons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const extra = button
+            .closest(".property-text")
+            .querySelector(".extra");
+
+        extra.classList.toggle("show");
+
+        button.textContent =
+            extra.classList.contains("show")
+                ? "Show Less"
+                : "...";
+
+    });
+
+});
+
+</script>
+</body>
+</html>
+
+</script>
+</body>
+</html>
